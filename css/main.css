@@ -66,6 +66,14 @@ body {
     width: 75px;
 }
 
+.bottom-img:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.social-bars{
+}
+
 /* Padding for spacing */
 .inner {
   padding: 30px;
