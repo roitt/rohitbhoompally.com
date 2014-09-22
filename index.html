@@ -41,16 +41,16 @@
             <div class="inner">
               <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li class="active"><a class="scroll-link" id="home" href="#">HOME</a></li>
+                <li><a class="scroll-link" id="about" href="#">ABOUT</a></li>
+                <li><a class="scroll-link" id="work" href="#">WORK</a></li>
+                <li><a class="scroll-link" id="skills" href="#">SKILLS</a></li>
+                <li><a class="scroll-link" id="contact" href="#">CONTACT</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="inner cover">
+          <div id="home" class="inner cover">
             <p class="lead">Application Developer. Aspiring Designer.</p>
             <h1 class="cover-heading"><span style="color:#83F52C">rohit</span>bhoompally</h1>
             <div class="social-bars">
@@ -61,7 +61,7 @@
             </div>
           </div>
 
-          <div class="mastfoot">
+          <div class="mastfoot" class="inner cover">
             <div class="inner">
               <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
             </div>
@@ -72,6 +72,33 @@
       </div>
 
     </div>
+    
+    <div id="about" class="page-section">
+        <div class="container">
+		  <h2>About</h2>
+        </div>
+	<!--/.container-->
+    </div>
+          
+    <div id="work" class="page-section">
+	   <div class="container">
+		  <h2>Work</h2>
+        </div>
+	<!--/.container-->
+    </div>
+          
+    <div id="skills" class="page-section">
+	   <div class="container">
+		  <h2>Skills</h2>
+		</div>
+    </div>
+          
+    <div id="contact" class="page-section">
+	   <div class="container">
+		  <h2>Contact</h2>
+		</div>
+	<!--/.container-->
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -80,6 +107,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
     <script src="assets/js/jsrotate.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>

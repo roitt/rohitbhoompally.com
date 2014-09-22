@@ -27,8 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
-  background: url(/assets/img/hyd_back.jpg) no-repeat center center fixed; 
+  background-color: #333; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,6 +49,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  background: url(/assets/img/hyd_back.jpg) no-repeat center center fixed;
 }
 .cover-container {
   margin-right: auto;
@@ -120,6 +120,8 @@ body {
   border-bottom-color: #83F52C;
 }
 
+/* Handling each page section */
+
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -142,7 +144,32 @@ body {
   font-weight: bold;
 }
 
+/* Individual Scrollable Pages */
+.page-section {
+	width: 100%;
+	min-height: 800px;
+	padding: 50px 0;
+}
+.page-section h1 {
+	font-size: 4em;
+	margin: 50px 0;
+}
+.page-section h1 span {
+	font-weight: 200;
+}
 
+.page-section#about {
+	background: url(/assets/img/hyd_back.jpg) bottom center no-repeat;
+}
+.page-section#work {
+	background: url(/assets/img/hyd_back.jpg) bottom center no-repeat;
+}
+.page-section#skills {
+	background: url(/assets/img/hyd_back.jpg) top center no-repeat;
+}
+.page-section#contact {
+	background: url(/assets/img/hyd_back.jpg) top center no-repeat;
+}
 /*
  * Footer
  */
