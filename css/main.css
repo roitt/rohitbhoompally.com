@@ -137,7 +137,7 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -159,16 +159,16 @@ body {
 }
 
 .page-section#about {
-	background: url(/assets/img/hyd_back.jpg) bottom center no-repeat;
+	background: url(/assets/img/india_one.jpg) bottom center no-repeat;
 }
 .page-section#work {
-	background: url(/assets/img/hyd_back.jpg) bottom center no-repeat;
+	background: url(/assets/img/india_two.jpg) bottom center no-repeat;
 }
 .page-section#skills {
-	background: url(/assets/img/hyd_back.jpg) top center no-repeat;
+	background: url(/assets/img/india_three.jpg) top center no-repeat;
 }
 .page-section#contact {
-	background: url(/assets/img/hyd_back.jpg) top center no-repeat;
+	background: url(/assets/img/india_four.jpg) top center no-repeat;
 }
 /*
  * Footer

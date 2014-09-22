@@ -41,11 +41,11 @@
             <div class="inner">
               <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
-                <li class="active"><a class="scroll-link" id="home" href="#">HOME</a></li>
-                <li><a class="scroll-link" id="about" href="#">ABOUT</a></li>
-                <li><a class="scroll-link" id="work" href="#">WORK</a></li>
-                <li><a class="scroll-link" id="skills" href="#">SKILLS</a></li>
-                <li><a class="scroll-link" id="contact" href="#">CONTACT</a></li>
+                <li class="active"><a class="scroll-link" data-id="home" href="#">HOME</a></li>
+                <li><a class="scroll-link" data-id="about" href="#">ABOUT</a></li>
+                <li><a class="scroll-link" data-id="work" href="#">WORK</a></li>
+                <li><a class="scroll-link" data-id="skills" href="#">SKILLS</a></li>
+                <li><a class="scroll-link" data-id="contact" href="#">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -63,7 +63,7 @@
 
           <div class="mastfoot" class="inner cover">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Want to chat? Call me at 513-641-8024, or drop me a line at <a>bhoompally@live.com</a></p>
             </div>
           </div>
 
@@ -202,7 +202,26 @@
                 }
             } 
         });
+        
+        /* ScrollTo */
+        var scrollLink = $(".scroll-link");
+        scrollLink.click(function(event){
+            event.preventDefault();
+		    var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
     });
+        
+    /* Scroll function */
+    function scrollToID(id, speed){
+	   var targetOffset = $(id).offset().top;
+	   var mainNav = $('#main-nav');
+	   $('html,body').animate({scrollTop:targetOffset}, speed);
+	   if (mainNav.hasClass("open")) {
+		  mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+		  mainNav.removeClass("open");
+	   }
+    }
     
     </script>
   </body>
