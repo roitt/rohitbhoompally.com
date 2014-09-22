@@ -41,11 +41,11 @@
             <div class="inner">
               <img class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -54,10 +54,10 @@
             <p class="lead">Application Developer. Aspiring Designer.</p>
             <h1 class="cover-heading"><span style="color:#83F52C">ROHIT</span> BHOOMPALLY</h1>
             <div class="social-bars">
-                <img id="img-resume" class="bottom-img" src="assets/img/ic_resume.png" />
-                <img id="img-linkedin"class="bottom-img" src="assets/img/ic_in.png"/>
-                <img id="img-git" class="bottom-img" src="assets/img/ic_git.png"/>
-                <img id="img-mail" class="bottom-img" src="assets/img/ic_mail.png"/>
+                <img title="Resume" id="img-resume" class="bottom-img" src="assets/img/ic_resume.png" />
+                <img title="LinkedIn Profile" id="img-linkedin"class="bottom-img" src="assets/img/ic_in.png"/>
+                <img title="GitHub" id="img-git" class="bottom-img" src="assets/img/ic_git.png"/>
+                <img title="Email" id="img-mail" class="bottom-img" src="assets/img/ic_mail.png"/>
             </div>
           </div>
 
@@ -138,7 +138,14 @@
                 image_mail.fadeIn('fast');
             });
         });
+        
+        /* Allow file download on click */
+        image_resume.click(function() {
+            var w = window.open('/files/resume.pdf', 'Resume', '');
+            w.onload = function() { this.document.title = "Resume"; }
+        });
     });
+    
     </script>
   </body>
 </html>
