@@ -39,7 +39,7 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <img class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
+              <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
@@ -52,7 +52,7 @@
 
           <div class="inner cover">
             <p class="lead">Application Developer. Aspiring Designer.</p>
-            <h1 class="cover-heading"><span style="color:#83F52C">ROHIT</span> BHOOMPALLY</h1>
+            <h1 class="cover-heading"><span style="color:#83F52C">rohit</span>bhoompally</h1>
             <div class="social-bars">
                 <img title="Resume" id="img-resume" class="bottom-img" src="assets/img/ic_resume.png" />
                 <img title="LinkedIn Profile" id="img-linkedin"class="bottom-img" src="assets/img/ic_in.png"/>
@@ -79,6 +79,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
+    <script src="assets/js/jsrotate.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
@@ -158,6 +159,20 @@
         /* Mail to */
         image_mail.click(function(){
             window.location.href = "mailto:rohit.bhoompally@gmail.com";
+        });
+        
+        /* Tilt brand image */
+        var brand = $("#masthead-brand");
+        brand.rotate({ 
+            bind: 
+            { 
+                mouseover : function() { 
+                $(this).rotate({animateTo:45})
+                },
+                mouseout : function() { 
+                $(this).rotate({animateTo:0})
+                }
+            } 
         });
     });
     
