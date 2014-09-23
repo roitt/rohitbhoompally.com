@@ -41,11 +41,11 @@
             <div class="inner">
               <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
-                <li class="active"><a class="scroll-link" data-id="home" href="#">HOME</a></li>
-                <li><a class="scroll-link" data-id="about" href="#">ABOUT</a></li>
-                <li><a class="scroll-link" data-id="work" href="#">WORK</a></li>
-                <li><a class="scroll-link" data-id="skills" href="#">SKILLS</a></li>
-                <li><a class="scroll-link" data-id="contact" href="#">CONTACT</a></li>
+                <li id="home-item" class="active"><a class="scroll-link" data-toggle="tab" data-id="home" href="#">HOME</a></li>
+                <li id="about-item"><a class="scroll-link" data-toggle="tab" data-id="about" href="#">ABOUT</a></li>
+                <li id="work-item"><a class="scroll-link" data-toggle="tab" data-id="work" href="#">WORK</a></li>
+                <li id="skills-item"><a class="scroll-link" data-toggle="tab" data-id="skills" href="#">SKILLS</a></li>
+                <li id="contact-item"><a class="scroll-link" data-toggle="tab" data-id="contact" href="#">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -222,6 +222,26 @@
 		  mainNav.removeClass("open");
 	   }
     }
+    
+    /* Making List Items active on click and on page refresh */
+    $("ul.nav li").click(function(event){
+        $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+        $( this ).addClass( 'active' );
+    });
+        
+    $(function() { 
+    //for bootstrap 3 use 'shown.bs.tab' instead of 'shown' in the next line
+    $('a[data-toggle="tab"]').on('shown', function (e) {
+        //save the latest tab; use cookies if you like 'em better:
+        localStorage.setItem('lastTab', $(e.target).attr('id'));
+    });
+
+    //go to the latest tab, if it exists:
+    var lastTab = localStorage.getItem('lastTab');
+    if (lastTab) {
+        $('#'+lastTab).tab('show');
+    }
+    });
     
     </script>
   </body>

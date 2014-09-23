@@ -184,7 +184,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
    .masthead {
     position: fixed;
     top: 0;
