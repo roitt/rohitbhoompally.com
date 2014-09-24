@@ -41,11 +41,11 @@
             <div class="inner">
               <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
-                <li id="home-item" class="active"><a class="scroll-link" data-toggle="tab" data-id="home" href="#">HOME</a></li>
-                <li id="about-item"><a class="scroll-link" data-toggle="tab" data-id="about" href="#">ABOUT</a></li>
-                <li id="work-item"><a class="scroll-link" data-toggle="tab" data-id="work" href="#">WORK</a></li>
-                <li id="skills-item"><a class="scroll-link" data-toggle="tab" data-id="skills" href="#">SKILLS</a></li>
-                <li id="contact-item"><a class="scroll-link" data-toggle="tab" data-id="contact" href="#">CONTACT</a></li>
+                <li id="home-item" class="active"><a id="home-link" class="scroll-link" data-toggle="tab" data-id="home" href="#">HOME</a></li>
+                <li id="about-item"><a id="about-link" class="scroll-link" data-toggle="tab" data-id="about" href="#">ABOUT</a></li>
+                <li id="work-item"><a id="work-link" class="scroll-link" data-toggle="tab" data-id="work" href="#">WORK</a></li>
+                <li id="skills-item"><a id="skills-link" class="scroll-link" data-toggle="tab" data-id="skills" href="#">SKILLS</a></li>
+                <li id="contact-item"><a id="contact-link" class="scroll-link" data-toggle="tab" data-id="contact" href="#">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -229,22 +229,14 @@
         $( this ).addClass( 'active' );
     });
         
-    $(function() { 
-    //for bootstrap 3 use 'shown.bs.tab' instead of 'shown' in the next line
-    $('a[data-toggle="tab"]').on('shown', function (e) {
-        //save the latest tab; use cookies if you like 'em better:
-        localStorage.setItem('lastTab', $(e.target).attr('id'));
-    });
-
-    //Go to the latest tab, if it exists:
-    var lastTab = localStorage.getItem('lastTab');
-    if (lastTab) {
-        $('#'+lastTab).tab('show');
-    }
-    });
-        
-    // Change header color on scroll
+    // Change header color on scroll and set active class based on scroll.
     var t = $('#home').offset().top + 200;
+    var homeOffset = $('#home').offset().top;
+    var aboutOffset = $('#about').offset().top;
+    var workOffset = $('#work').offset().top;
+    var skillsOffset = $('#skills').offset().top;
+    var contactOffset = $('#contact').offset().top;
+
     $(document).scroll(function(){
         if($(this).scrollTop() > t) {
             var oldBGColor = $('#header').css('background-color'),
@@ -254,6 +246,23 @@
             var oldBGColor = $('#header').css('background-color'),
             newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.0'); 
             $('#header').css({backgroundColor: newBGColor});
+        }
+        
+        if($(this).scrollTop() > homeOffset && $(this).scrollTop() < aboutOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#home-item').addClass( 'active' );
+        } else if($(this).scrollTop() > aboutOffset && $(this).scrollTop() < workOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#about-item').addClass( 'active' );
+        } else if($(this).scrollTop() > workOffset && $(this).scrollTop() < skillsOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#work-item').addClass( 'active' );
+        } else if($(this).scrollTop() > skillsOffset && $(this).scrollTop() < contactOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#skills-item').addClass( 'active' );
+        } else if($(this).scrollTop() > contactOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#contact-item').addClass( 'active' );
         }
     });
     </script>
