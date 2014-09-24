@@ -17,8 +17,9 @@
     <title>Rohit Bhoompally</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css"> <!-- CSS reset -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <script src="/assets/js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -74,6 +75,67 @@
     
     <div id="about" class="page-section">
         <div class="container">
+            <section id="cd-timeline" class="cd-container">
+		      <div class="cd-timeline-block">
+			     <div class="cd-timeline-img cd-first">
+				    <img src="assets/img/ic_book_open.png" alt="College">
+			     </div> <!-- cd-timeline-img -->
+
+			     <div class="cd-timeline-content">
+				    <h2>University of Cincinnati</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				    <span class="cd-date">Jan 14</span>
+			     </div> <!-- cd-timeline-content -->
+		      </div> <!-- cd-timeline-block -->
+
+		      <div class="cd-timeline-block">
+			     <div class="cd-timeline-img cd-first">
+				    <img src="assets/img/ic_keyboard.png" alt="Office">
+			     </div> <!-- cd-timeline-img -->
+
+			     <div class="cd-timeline-content">
+				    <h2>University of Cincinnati Information Technologies</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				    <span class="cd-date">Jan 18</span>
+			     </div> <!-- cd-timeline-content -->
+		      </div> <!-- cd-timeline-block -->
+
+		      <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-third">
+				    <img src="assets/img/ic_keyboard.png" alt="Office">
+			     </div> <!-- cd-timeline-img -->
+
+			     <div class="cd-timeline-content">
+				    <h2>Persistent Systems Limited</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				    <span class="cd-date">Jan 24</span>
+                </div> <!-- cd-timeline-content -->
+		      </div> <!-- cd-timeline-block -->
+
+		      <div class="cd-timeline-block">
+			     <div class="cd-timeline-img cd-third">
+				    <img src="assets/img/ic_mobile.png" alt="Office">
+			     </div> <!-- cd-timeline-img -->
+
+			     <div class="cd-timeline-content">
+				    <h2>Now Floats Technologies</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				    <span class="cd-date">Feb 14</span>
+			     </div> <!-- cd-timeline-content -->
+		      </div> <!-- cd-timeline-block -->
+
+		      <div class="cd-timeline-block">
+			     <div class="cd-timeline-img cd-second">
+				    <img src="assets/img/ic_book_open.png" alt="College">
+			     </div> <!-- cd-timeline-img -->
+
+			     <div class="cd-timeline-content">
+				    <h2>Jawaharlal Nehru Technological University - Affiliation</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				    <span class="cd-date">Feb 18</span>
+			     </div> <!-- cd-timeline-content -->
+		      </div> <!-- cd-timeline-block -->
+	       </section> <!-- cd-timeline -->
         </div>
 	<!--/.container-->
     </div>
@@ -107,6 +169,7 @@
     <script src="assets/js/jsrotate.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/js-back-stretch.js"></script>
+    <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
@@ -248,7 +311,7 @@
             $('#header').css({backgroundColor: newBGColor});
         }
         
-        if($(this).scrollTop() >= homeOffset && $(this).scrollTop() < aboutOffset){
+        /* if($(this).scrollTop() >= homeOffset && $(this).scrollTop() < aboutOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#home-item').addClass( 'active' );
         } else if($(this).scrollTop() >= aboutOffset && $(this).scrollTop() < workOffset){
@@ -263,7 +326,7 @@
         } else if($(this).scrollTop() >= contactOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#contact-item').addClass( 'active' );
-        }
+        } */
     });
         
     // Snap to home on brand click
