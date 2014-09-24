@@ -37,7 +37,7 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
+          <div id="header" class="masthead clearfix">
             <div class="inner">
               <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
               <ul class="nav masthead-nav">
@@ -236,13 +236,26 @@
         localStorage.setItem('lastTab', $(e.target).attr('id'));
     });
 
-    //go to the latest tab, if it exists:
+    //Go to the latest tab, if it exists:
     var lastTab = localStorage.getItem('lastTab');
     if (lastTab) {
         $('#'+lastTab).tab('show');
     }
     });
-    
+        
+    // Change header color on scroll
+    var t = $('#home').offset().top + 200;
+    $(document).scroll(function(){
+        if($(this).scrollTop() > t) {
+            var oldBGColor = $('#header').css('background-color'),
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.1'); 
+            $('#header').css({backgroundColor: newBGColor});
+        } else {
+            var oldBGColor = $('#header').css('background-color'),
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.0'); 
+            $('#header').css({backgroundColor: newBGColor});
+        }
+    });
     </script>
   </body>
 </html>

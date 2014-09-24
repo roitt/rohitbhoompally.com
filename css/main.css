@@ -82,6 +82,11 @@ body {
 /*
  * Header
  */
+
+#header {
+    background-color: rgba(0,0,0,0);
+}
+
 .masthead-brand {
   margin-top: -5px;
   margin-bottom: 10px;
