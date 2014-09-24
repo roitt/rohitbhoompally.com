@@ -106,10 +106,12 @@
     <script src="assets/js/docs.min.js"></script>
     <script src="assets/js/jsrotate.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/js-back-stretch.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $( document ).ready(function() {
+        $(".site-wrapper-inner").backstretch("/assets/img/hyd_back.jpg");
         var image_resume = $("#img-resume");
         image_resume.mouseover(function() {
             image_resume.fadeOut('fast', function() {
@@ -246,19 +248,19 @@
             $('#header').css({backgroundColor: newBGColor});
         }
         
-        if($(this).scrollTop() > homeOffset && $(this).scrollTop() < aboutOffset){
+        if($(this).scrollTop() >= homeOffset && $(this).scrollTop() < aboutOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#home-item').addClass( 'active' );
-        } else if($(this).scrollTop() > aboutOffset && $(this).scrollTop() < workOffset){
+        } else if($(this).scrollTop() >= aboutOffset && $(this).scrollTop() < workOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#about-item').addClass( 'active' );
-        } else if($(this).scrollTop() > workOffset && $(this).scrollTop() < skillsOffset){
+        } else if($(this).scrollTop() >= workOffset && $(this).scrollTop() < skillsOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#work-item').addClass( 'active' );
-        } else if($(this).scrollTop() > skillsOffset && $(this).scrollTop() < contactOffset){
+        } else if($(this).scrollTop() >= skillsOffset && $(this).scrollTop() < contactOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#skills-item').addClass( 'active' );
-        } else if($(this).scrollTop() > contactOffset){
+        } else if($(this).scrollTop() >= contactOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#contact-item').addClass( 'active' );
         }
