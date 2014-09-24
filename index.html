@@ -265,6 +265,11 @@
             $('#contact-item').addClass( 'active' );
         }
     });
+        
+    // Snap to home on brand click
+    $( '#masthead-brand' ).click(function(){
+        scrollToID('#home', 750);
+    });
     </script>
   </body>
 </html>
