@@ -74,12 +74,9 @@ body {
     cursor: hand;
 }
 
-.social-bars{
-}
-
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 25px;
 }
 
 
@@ -140,7 +137,6 @@ body {
   }
 }
 
-
 /*
  * Cover
  */
@@ -161,7 +157,7 @@ body {
 }
 .page-section h1 {
 	font-size: 4em;
-	margin: 50px 0;
+	margin: 10px 0;
 }
 .page-section h1 span {
 	font-weight: 200;
@@ -262,28 +258,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -349,6 +323,7 @@ Main components
 .cd-timeline-block:last-child {
   margin-bottom: 0;
 }
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
     margin: 4em 0;
@@ -388,26 +363,6 @@ Main components
 }
 .cd-timeline-img.cd-third {
   background: #f0ca45;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-img {
-    width: 60px;
-    height: 60px;
-    left: 50%;
-    margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
 }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -482,36 +437,31 @@ Main components
   clear: both;
 }
 .cd-timeline-content h2 {
-  color: #303e49;
+    font-size: 18px;
+    color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 25px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  color: #262626;
 }
 
 .cd-date {
     color: #E6E5E6;
+    font-style: italic;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
 .cd-timeline-content p {
-  margin: 1em 0;
   line-height: 1.6;
 }
-.cd-timeline-content .cd-read-more {
-  float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
-  border-radius: 0.25em;
-}
+
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
+  padding: .3em 0;
   opacity: .7;
 }
 .cd-timeline-content::before {
@@ -526,22 +476,20 @@ Main components
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 18px;
   }
   .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    color: #262626;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 16px;
-    color: #2A2A2A;
+  .cd-timeline-content .cd-date {
+    color: #262626;
+    font-style: italic;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
     width: 45%;
   }
   .cd-timeline-content::before {
@@ -556,8 +504,9 @@ Main components
     width: 100%;
     left: 122%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 19px;
+    font-size: 1.188em;
+    color: #FFF;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
@@ -596,6 +545,28 @@ Main components
     animation: cd-bounce-2-inverse 0.6s;
   }
 }
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .cssanimations .cd-timeline-img.is-hidden {
+    visibility: hidden;
+  }
+  .cssanimations .cd-timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 0.6s;
+    -moz-animation: cd-bounce-1 0.6s;
+    animation: cd-bounce-1 0.6s;
+  }
+}
+
 @-webkit-keyframes cd-bounce-2 {
   0% {
     opacity: 0;
