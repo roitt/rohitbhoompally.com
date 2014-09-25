@@ -31,24 +31,27 @@
 
   <body>
 
+    <div class="header-container">
+        <div id="header" class="masthead clearfix">
+            <div class="inner">
+                <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
+                    <ul class="nav masthead-nav">
+                    <li id="home-item" class="active"><a id="home-link" class="scroll-link" data-toggle="tab" data-id="home" href="#">HOME</a></li>
+                    <li id="about-item"><a id="about-link" class="scroll-link" data-toggle="tab" data-id="about" href="#">ABOUT</a></li>
+                    <li id="work-item"><a id="work-link" class="scroll-link" data-toggle="tab" data-id="work" href="#">WORK</a></li>
+                    <li id="skills-item"><a id="skills-link" class="scroll-link" data-toggle="tab" data-id="skills" href="#">SKILLS</a></li>
+                    <li id="contact-item"><a id="contact-link" class="scroll-link" data-toggle="tab" data-id="contact" href="#">CONTACT</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    
+      
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner" id="home">
 
         <div class="cover-container">
-
-          <div id="header" class="masthead clearfix">
-            <div class="inner">
-              <img id="masthead-brand" class="masthead-brand" src="assets/img/rb.png" height="60" width="60"></img>
-              <ul class="nav masthead-nav">
-                <li id="home-item" class="active"><a id="home-link" class="scroll-link" data-toggle="tab" data-id="home" href="#">HOME</a></li>
-                <li id="about-item"><a id="about-link" class="scroll-link" data-toggle="tab" data-id="about" href="#">ABOUT</a></li>
-                <li id="work-item"><a id="work-link" class="scroll-link" data-toggle="tab" data-id="work" href="#">WORK</a></li>
-                <li id="skills-item"><a id="skills-link" class="scroll-link" data-toggle="tab" data-id="skills" href="#">SKILLS</a></li>
-                <li id="contact-item"><a id="contact-link" class="scroll-link" data-toggle="tab" data-id="contact" href="#">CONTACT</a></li>
-              </ul>
-            </div>
-          </div>
 
           <div class="inner cover">
             <p class="lead">Application Developer. Aspiring Designer.</p>
@@ -75,6 +78,10 @@
     
     <div id="about" class="page-section">
         <div class="container">
+            <div id="about-me-div">
+                <h1 id="hello-desc">Hello !</h1>
+                <h2 id="about-me-desc">I am a software application developer. I like to write clean and reliable code, drink unhealthy soda, hangout with friends, smile whenever possible and design & develop cool stuff.</h2>
+            </div>
             <section id="cd-timeline" class="cd-container">
 		      <div class="cd-timeline-block">
 			     <div class="cd-timeline-img cd-first">
@@ -303,7 +310,7 @@
     $(document).scroll(function(){
         if($(this).scrollTop() > t) {
             var oldBGColor = $('#header').css('background-color'),
-            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.1'); 
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.5'); 
             $('#header').css({backgroundColor: newBGColor});
         } else {
             var oldBGColor = $('#header').css('background-color'),

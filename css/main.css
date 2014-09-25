@@ -42,22 +42,44 @@ body {
   text-align: center;
 }
 
+/* Text adjusments */
+
+#about-me-div{
+    color: #FFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+#about-me-desc{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#hello-desc{
+    color: #83F52C;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+    z-index: 100;
 }
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Image placement under the name */
@@ -166,23 +188,16 @@ body {
 
 .page-section#about {
 	background-color: #333;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+   
 }
 .page-section#work {
     background-color: #333;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .page-section#skills {
     background-color: #333;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .page-section#contact {
     background-color: #333;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 /*
  * Footer
@@ -198,7 +213,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 480px) {
+@media (min-width: 400px) {
    .masthead {
     position: fixed;
     top: 0;
@@ -218,9 +233,20 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .header-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
   .cover-heading{
     font-size: 50px;
   }
+    
+  #hello-desc{
+      font-size: 44px;
+  }
+  #about-me-desc{
+      font-size: 16px;
+  }
+    
 }
 
 @media (min-width: 768px) {
@@ -243,8 +269,17 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  .header-container {
+    width: 100%;
+  }
   .cover-heading{
     font-size: 50px;
+  }
+  #hello-desc{
+      font-size: 50px;
+  }
+  #about-me-desc{
+      font-size: 18px;
   }
 }
 
@@ -254,9 +289,20 @@ body {
   .cover-container {
     width: 700px;
   }
+  .header-container {
+    width: 700px; /* Must be percentage or pixels for horizontal alignment */
+  }
   .cover-heading{
     font-size: 80px;
   }
+    
+  #hello-desc{
+      font-size: 60px;
+  }
+  #about-me-desc{
+      font-size: 18px;
+  }
+}
 }
 
 /* -------------------------------- 
@@ -357,13 +403,13 @@ Main components
   margin-top: -12px;
 }
 .cd-timeline-img.cd-first {
-  background: #75ce66;
+  background: #83F52C;
 }
 .cd-timeline-img.cd-second {
-  background: #c03b44;
+  background: #FF6600;
 }
 .cd-timeline-img.cd-third {
-  background: #f0ca45;
+  background: #F3F315;
 }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -428,7 +474,10 @@ Main components
   margin-left: 60px;
   background: white;
   border-radius: 0.25em;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
   box-shadow: 0 3px 0 #d7e4ed;
   text-align: left;
 }
