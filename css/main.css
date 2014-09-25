@@ -76,7 +76,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 25px;
+  padding: 20px;
 }
 
 
@@ -86,6 +86,7 @@ body {
 
 #header {
     background-color: rgba(0,0,0,0);
+    z-index: 1;
 }
 
 .masthead-brand {
@@ -503,9 +504,8 @@ Main components
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
-    font-size: 19px;
-    font-size: 1.188em;
+    top: 10px;
+    font-size: 18px;
     color: #FFF;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
