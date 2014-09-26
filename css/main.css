@@ -60,6 +60,17 @@ body {
     color: #83F52C;
 }
 
+.highlighter {
+    color: #83F52C;
+    font-size: 20px;
+}
+
+.grey-highlighter {
+    color: #262626;
+    font-size: 16px;
+    font-style: italic;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -490,9 +501,15 @@ Main components
     font-size: 18px;
     color: #303e49;
 }
+.cd-timeline-content h3 {
+    font-size: 14px;
+    color: #AEAEAE;
+    font-style: italic;
+    margin-top: -5px;
+  }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 14px;
-  color: #262626;
+  color: #696869;
 }
 
 .cd-date {
@@ -528,9 +545,12 @@ Main components
   .cd-timeline-content h2 {
     font-size: 18px;
   }
+  .cd-timeline-content h3 {
+    font-size: 14px;
+  }
   .cd-timeline-content p {
     font-size: 15px;
-    color: #262626;
+    color: #696869;
   }
   .cd-timeline-content .cd-date {
     color: #262626;
