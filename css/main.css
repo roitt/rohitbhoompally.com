@@ -219,8 +219,15 @@ body {
 }
 
 .footer {
-  background-color: #77DE28;
-  min-height: 200px;
+  background-color: #E6E5E6;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.phoneemail {
+    font-size: 20px;
+    color: #FFF;
 }
 
 
