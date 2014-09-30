@@ -292,6 +292,36 @@
         });
     });
         
+    // Change header color on scroll and set active class based on scroll.
+    var t = $('#home').offset().top + 200;
+    var homeOffset = $('#home').offset().top;
+    var aboutOffset = $('#about').offset().top;
+        
+    $(document).scroll(function(){
+        if($(this).scrollTop() > t) {
+            var oldBGColor = $('#header').css('background-color'),
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.1'); 
+            $('#header').css({backgroundColor: newBGColor});
+        } else {
+            var oldBGColor = $('#header').css('background-color'),
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.0'); 
+            $('#header').css({backgroundColor: newBGColor});
+        }
+        
+         if($(this).scrollTop() == homeOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#home-item').addClass( 'active' );
+        } else if($(this).scrollTop() >= aboutOffset){
+            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
+            $('#about-item').addClass( 'active' );
+        } 
+    });
+        
+    // Snap to home on brand click
+    $( '#masthead-brand' ).click(function(){
+        scrollToID('#home', 750);
+    });
+        
     /* Scroll function */
     function scrollToID(id, speed){
 	   var targetOffset = $(id).offset().top;
@@ -308,48 +338,7 @@
         $( this ).parent().find( 'li.active' ).removeClass( 'active' );
         $( this ).addClass( 'active' );
     });
-        
-    // Change header color on scroll and set active class based on scroll.
-    var t = $('#home').offset().top + 200;
-    var homeOffset = $('#home').offset().top;
-    var aboutOffset = $('#about').offset().top;
-    var workOffset = $('#work').offset().top;
-    var skillsOffset = $('#skills').offset().top;
-    var contactOffset = $('#contact').offset().top;
-
-    $(document).scroll(function(){
-        if($(this).scrollTop() > t) {
-            var oldBGColor = $('#header').css('background-color'),
-            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.5'); 
-            $('#header').css({backgroundColor: newBGColor});
-        } else {
-            var oldBGColor = $('#header').css('background-color'),
-            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.0'); 
-            $('#header').css({backgroundColor: newBGColor});
-        }
-        
-        /* if($(this).scrollTop() >= homeOffset && $(this).scrollTop() < aboutOffset){
-            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
-            $('#home-item').addClass( 'active' );
-        } else if($(this).scrollTop() >= aboutOffset && $(this).scrollTop() < workOffset){
-            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
-            $('#about-item').addClass( 'active' );
-        } else if($(this).scrollTop() >= workOffset && $(this).scrollTop() < skillsOffset){
-            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
-            $('#work-item').addClass( 'active' );
-        } else if($(this).scrollTop() >= skillsOffset && $(this).scrollTop() < contactOffset){
-            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
-            $('#skills-item').addClass( 'active' );
-        } else if($(this).scrollTop() >= contactOffset){
-            $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
-            $('#contact-item').addClass( 'active' );
-        } */
-    });
-        
-    // Snap to home on brand click
-    $( '#masthead-brand' ).click(function(){
-        scrollToID('#home', 750);
-    });
+    
     </script>
   </body>
 </html>
