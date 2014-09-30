@@ -37,6 +37,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0px;
 }
 body {
   text-align: center;
@@ -219,9 +220,9 @@ body {
 }
 
 .footer {
-  background-color: #E6E5E6;
   text-align: center;
   padding: 10px;
+  margin-top: 50px;
 }
 
 .footer-img {
