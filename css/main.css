@@ -222,17 +222,84 @@ body {
   background-color: #E6E5E6;
   text-align: center;
   padding: 10px;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 .footer-img {
+    margin: 10px;
     height: 50px;
     width: 50px;
-    margin: 10px;
+}
+
+.footer-img:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+#img-twitter {
+    content:url('/assets/img/twitter.png');  
+}
+
+#img-twitter:hover {
+    content:url('/assets/img/twitter_f.png');
+    margin-bottom: 15px;
+}
+
+#img-facebook {
+    content:url('/assets/img/facebook.png');  
+}
+
+#img-facebook:hover {
+    content:url('/assets/img/facebook_f.png');
+    margin-bottom: 15px;
+}
+
+#img-gplus {
+    content:url('/assets/img/gplus.png');  
+}
+
+#img-gplus:hover {
+    content:url('/assets/img/gplus_f.png');
+    margin-bottom: 15px;
+}
+
+#img-in {
+    content:url('/assets/img/in.png');  
+}
+
+#img-in:hover {
+    content:url('/assets/img/in_f.png');
+    margin-bottom: 15px;
+}
+
+#img-insta {
+    content:url('/assets/img/insta.png');  
+}
+
+#img-insta:hover {
+    content:url('/assets/img/insta_f.png');
+    margin-bottom: 15px;
+}
+
+#img-github {
+    content:url('/assets/img/git.png');  
+}
+
+#img-github:hover {
+    content:url('/assets/img/git_f.png');
+    margin-bottom: 15px;
+}
+
+#img-email {
+    content:url('/assets/img/mail.png');  
+}
+
+#img-email:hover {
+    content:url('/assets/img/mail_f.png');
+    margin-bottom: 15px;
 }
 
 .phoneemail {
-    font-size: 20px;
+    font-size: 16px;
     color: #FFF;
 }
 
