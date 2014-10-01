@@ -334,10 +334,13 @@ body {
   }
   .header-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    z-index: 2;
   }
   .cover-heading{
-    font-size: 45px;
+    font-size: 30px;
+  }
+    
+  .bottom-img {
+      
   }
     
   #hello-desc{
@@ -362,6 +365,7 @@ body {
   .site-wrapper-inner {
     vertical-align: middle;
   }
+
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -372,7 +376,7 @@ body {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
   .cover-heading{
-    font-size: 50px;
+    font-size: 40px;
   }
     
   #hello-desc{

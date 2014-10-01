@@ -300,7 +300,7 @@
     $(document).scroll(function(){
         if($(this).scrollTop() > t) {
             var oldBGColor = $('#header').css('background-color'),
-            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.1'); 
+            newBGColor = oldBGColor.replace(/[^,]+(?=\))/, '0.3'); 
             $('#header').css({backgroundColor: newBGColor});
         } else {
             var oldBGColor = $('#header').css('background-color'),
@@ -308,7 +308,7 @@
             $('#header').css({backgroundColor: newBGColor});
         }
         
-         if($(this).scrollTop() == homeOffset){
+        if($(this).scrollTop() == homeOffset){
             $( "ul.nav li" ).parent().find( 'li.active' ).removeClass( 'active' );
             $('#home-item').addClass( 'active' );
         } else if($(this).scrollTop() >= aboutOffset){
