@@ -221,7 +221,9 @@ body {
 
 .footer {
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 50px;
 }
 
@@ -309,7 +311,44 @@ body {
  * Affix and center
  */
 
-@media (min-width: 400px) {
+@media (min-width : 320px) {
+/* Styles */
+    .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+    
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .header-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    z-index: 2;
+  }
+  .cover-heading{
+    font-size: 45px;
+  }
+    
+  #hello-desc{
+      font-size: 44px;
+  }
+  #about-me-desc{
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 480px) {
    .masthead {
     position: fixed;
     top: 0;
