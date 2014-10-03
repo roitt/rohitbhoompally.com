@@ -63,11 +63,10 @@ body {
 
 .highlighter {
     color: #83F52C;
-    font-size: 20px;
 }
 
 .grey-highlighter {
-    color: #262626;
+    color: #FFFFFF;
     font-size: 16px;
     font-style: italic;
 }
@@ -610,7 +609,6 @@ Main components
   padding-right: 1em;
   padding-top: 0.3em;
   padding-bottom: 0.5em;
-  box-shadow: 0 3px 0 #d7e4ed;
   text-align: left;
 }
 .cd-timeline-content:after {
@@ -620,21 +618,21 @@ Main components
 }
 .cd-timeline-content h2 {
     font-size: 18px;
-    color: #303e49;
+    color: #FFF;
 }
 .cd-timeline-content h3 {
     font-size: 14px;
-    color: #AEAEAE;
+    color: #EDEDED;
     font-style: italic;
     margin-top: -5px;
   }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 14px;
-  color: #696869;
+  color: #F7F7F7;
 }
 
 .cd-date {
-    color: #E6E5E6;
+    color: #EDEDED;
     font-style: italic;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -664,17 +662,17 @@ Main components
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .cd-timeline-content h3 {
     font-size: 14px;
   }
   .cd-timeline-content p {
-    font-size: 15px;
-    color: #696869;
+    font-size: 16px;
+    color: #F7F7F7;
   }
   .cd-timeline-content .cd-date {
-    color: #262626;
+    color: #EDEDED;
     font-style: italic;
   }
 }

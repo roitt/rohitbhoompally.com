@@ -82,11 +82,11 @@
 				    <img src="assets/img/ic_book_open.png" alt="College">
 			     </div> <!-- cd-timeline-img -->
 
-			     <div class="cd-timeline-content">
+			     <div class="cd-timeline-content" id="uc">
 				    <h2>University of Cincinnati</h2>
                     <h3>Cincinnati, OH</h3>
-				    <p><span class="grey-highlighter">Coursework </span><span class="highlighter">{ </span>Machine Learning, User Interface Design, Experimental Combinatorics, Parallel Computing, Advanced Algorithms, Advanced Operating Systems, Database Management Systems and Wireless Networks <span class="highlighter">}</span></p>
-                     <p><span class="grey-highlighter">Thesis </span><span class="highlighter">{ </span>Multiple social channel collaboration <span class="highlighter">}</span></p>
+				    <p>I am a graduate student at University of Cincinnati, pursuing Masters in Computer Science, specializing in Social Computing and Data Science. My coursework over the past few months include <span class="highlighter">{ </span>Machine Learning, User Interface Design, Experimental Combinatorics, Parallel Computing, Advanced Algorithms, Advanced Operating Systems, Database Management Systems and Wireless Networks <span class="highlighter">} </span>.</p>
+                     <p>I am currently finishing up my academic research under <a><span class="highlighter">Prof. Fred Annexstein</span></a> in the area of social computing.</p>
 				    <span class="cd-date">Aug 2012 - Present</span>
 			     </div> <!-- cd-timeline-content -->
 		      </div> <!-- cd-timeline-block -->
@@ -96,10 +96,10 @@
 				    <img src="assets/img/ic_keyboard.png" alt="Office">
 			     </div> <!-- cd-timeline-img -->
 
-			     <div class="cd-timeline-content">
+			     <div class="cd-timeline-content" id="uc-applab">
 				    <h2>University of Cincinnati Information Technologies</h2>
                      <h3>Cincinnati, OH</h3>
-				    <p><span class="highlighter">{ </span>Working part-time as a Mobile Application Developer. A few of the interesting projects include Fuelytics, NightRide, Bearcat Spirit.<span class="highlighter"> }</span></p>
+				    <p>I am a part-time Android Application Developer at UCit. This place has given me the oppurtunity to build cool applications, few of which include <span class="highlighter">{ </span>NightRide & NightRide Driver (on-going), <a><span class="highlighter">Fuelytics</span></a>, Bearcat Spirit<span class="highlighter"> }</span>.</p>
 				    <span class="cd-date">Mar 2013 - Present</span>
 			     </div> <!-- cd-timeline-content -->
 		      </div> <!-- cd-timeline-block -->
@@ -192,6 +192,8 @@
     $( document ).ready(function() {
         $(".site-wrapper-inner").backstretch("/assets/img/blur.jpeg");
         $("#about").backstretch("/assets/img/blur.jpg");
+        $("#uc").backstretch("/assets/img/uc_blur.jpg");
+        $("#uc-applab").backstretch("/assets/img/uc_applab.png");
         var image_resume = $("#img-resume");
         image_resume.mouseover(function() {
             image_resume.fadeOut('fast', function() {
