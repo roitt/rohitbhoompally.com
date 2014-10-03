@@ -244,7 +244,6 @@ body {
 
 #img-twitter:hover {
     content:url('/assets/img/twitter_f.png');
-    margin-bottom: 15px;
 }
 
 #img-facebook {
@@ -253,7 +252,6 @@ body {
 
 #img-facebook:hover {
     content:url('/assets/img/facebook_f.png');
-    margin-bottom: 15px;
 }
 
 #img-gplus {
@@ -262,7 +260,6 @@ body {
 
 #img-gplus:hover {
     content:url('/assets/img/gplus_f.png');
-    margin-bottom: 15px;
 }
 
 #img-in {
@@ -271,7 +268,6 @@ body {
 
 #img-in:hover {
     content:url('/assets/img/in_f.png');
-    margin-bottom: 15px;
 }
 
 #img-insta {
@@ -280,7 +276,6 @@ body {
 
 #img-insta:hover {
     content:url('/assets/img/insta_f.png');
-    margin-bottom: 15px;
 }
 
 #img-github {
@@ -289,7 +284,6 @@ body {
 
 #img-github:hover {
     content:url('/assets/img/git_f.png');
-    margin-bottom: 15px;
 }
 
 #img-email {
@@ -298,7 +292,6 @@ body {
 
 #img-email:hover {
     content:url('/assets/img/mail_f.png');
-    margin-bottom: 15px;
 }
 
 .phoneemail {
