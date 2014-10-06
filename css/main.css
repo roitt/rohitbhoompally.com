@@ -32,7 +32,7 @@ html, * {
 html,
 body {
   height: 100%;
-  background-color: #333; 
+  background-color: #AEAEAE;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -69,6 +69,22 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     font-style: italic;
+}
+
+.circular {
+	width: 250px;
+	height: 250px;
+    margin: auto;
+    margin-top: 25px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(/assets/img/DSC_0487.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
