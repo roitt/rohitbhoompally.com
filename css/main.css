@@ -87,6 +87,32 @@ body {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
+.hand {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* unvisited link */
+.hand:link {
+    color: #83F52C;
+}
+
+/* visited link */
+.hand:visited {
+    color: #83F52C;
+}
+
+/* mouse over link */
+.hand:hover {
+    color: #83F52C;
+    font-style: bold;
+}
+
+/* selected link */
+.hand:active {
+    color: #83F52C;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
