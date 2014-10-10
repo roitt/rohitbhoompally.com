@@ -520,6 +520,13 @@ Main components
   width: 4px;
   background: #d7e4ed;
 }
+
+.cd-timeline-content .logos {
+    max-height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
