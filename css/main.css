@@ -105,7 +105,6 @@ body {
 /* mouse over link */
 .hand:hover {
     color: #83F52C;
-    font-style: bold;
 }
 
 /* selected link */
