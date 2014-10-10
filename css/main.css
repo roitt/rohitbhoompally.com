@@ -523,10 +523,20 @@ Main components
 
 .cd-timeline-content .logos {
     max-height: 60px;
+    max-width: 75px;
     display: block;
     margin: auto;
     margin-top: 20px;
 }
+
+.cd-timeline-content #floatslogo {
+    max-height: 60px;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
