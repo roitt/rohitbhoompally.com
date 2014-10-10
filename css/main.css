@@ -237,19 +237,6 @@ body {
 .page-section h1 span {
 	font-weight: 200;
 }
-
-.page-section#about {
-	background-color: #333;
-}
-.page-section#work {
-    background-color: #333;
-}
-.page-section#skills {
-    background-color: #333;
-}
-.page-section#contact {
-    background-color: #333;
-}
 /*
  * Footer
  */
@@ -676,21 +663,23 @@ Main components
 }
 .cd-timeline-content h2 {
     font-size: 18px;
-    color: #FFF;
+    color: #000;
+    text-align: center;
 }
 .cd-timeline-content h3 {
     font-size: 14px;
-    color: #EDEDED;
+    color: #7F7F7F;
     font-style: italic;
     margin-top: -5px;
+    text-align: center;
   }
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p{
   font-size: 14px;
-  color: #F7F7F7;
+  color: #404040;
 }
 
 .cd-date {
-    color: #EDEDED;
+    color: #7F7F7F;
     font-style: italic;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -727,10 +716,10 @@ Main components
   }
   .cd-timeline-content p {
     font-size: 16px;
-    color: #F7F7F7;
+    color: #404040;
   }
   .cd-timeline-content .cd-date {
-    color: #EDEDED;
+    color: #7F7F7F;
     font-style: italic;
   }
 }
