@@ -521,6 +521,11 @@ Main components
   background: #d7e4ed;
 }
 
+.img-logos:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .cd-timeline-content .logos {
     max-height: 50px;
     max-width: 65px;
