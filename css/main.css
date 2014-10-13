@@ -65,6 +65,10 @@ body {
     color: #83F52C;
 }
 
+.highlighter-i {
+    font-style: italic;
+}
+
 .grey-highlighter {
     color: #FFFFFF;
     font-size: 16px;
