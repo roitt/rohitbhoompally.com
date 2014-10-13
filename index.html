@@ -57,10 +57,10 @@
             <p class="lead">Application Developer. Aspiring Designer.</p>
             <h1 class="cover-heading"><span style="color:#83F52C">ROHIT</span> BHOOMPALLY</h1>
             <div class="social-bars">
-                <img title="Resume" id="img-resume" class="bottom-img" src="assets/img/resume.png" />
-                <img title="LinkedIn Profile" id="img-linkedin"class="bottom-img" src="assets/img/in.png"/>
-                <img title="GitHub" id="img-git" class="bottom-img" src="assets/img/git.png"/>
-                <img title="Email" id="img-mail" class="bottom-img" src="assets/img/mail.png"/>
+                <img title="Resume" id="img-resume" class="bottom-img" src="assets/img/resume_stale.png" />
+                <img title="LinkedIn Profile" id="img-linkedin"class="bottom-img" src="assets/img/in_stale.png"/>
+                <img title="GitHub" id="img-git" class="bottom-img" src="assets/img/git_stale.png"/>
+                <img title="Email" id="img-mail" class="bottom-img" src="assets/img/mail_stale.png"/>
             </div>
           </div>
 
@@ -196,7 +196,7 @@
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $( document ).ready(function() {
-        $(".site-wrapper-inner").backstretch("/assets/img/back_one.jpg");   
+        $(".site-wrapper-inner").backstretch("/assets/img/back_one.jpg", {speed: 350});   
         $("#about").backstretch("/assets/img/blur.jpg");
         var image_resume = $("#img-resume");
         image_resume.mouseover(function() {
@@ -207,7 +207,7 @@
         });
         image_resume.mouseout(function() {
             image_resume.fadeOut('fast', function() {
-                image_resume.attr('src', '/assets/img/resume.png');
+                image_resume.attr('src', '/assets/img/resume_stale.png');
                 image_resume.fadeIn('fast');
             });
         });
@@ -221,7 +221,7 @@
         });
         image_in.mouseout(function() {
             image_in.fadeOut('fast', function() {
-                image_in.attr('src', '/assets/img/in.png');
+                image_in.attr('src', '/assets/img/in_stale.png');
                 image_in.fadeIn('fast');
             });
         });
@@ -235,7 +235,7 @@
         });
         image_git.mouseout(function() {
             image_git.fadeOut('fast', function() {
-                image_git.attr('src', '/assets/img/git.png');
+                image_git.attr('src', '/assets/img/git_stale.png');
                 image_git.fadeIn('fast');
             });
         });
@@ -249,7 +249,7 @@
         });
         image_mail.mouseout(function() {
             image_mail.fadeOut('fast', function() {
-                image_mail.attr('src', '/assets/img/mail.png');
+                image_mail.attr('src', '/assets/img/mail_stale.png');
                 image_mail.fadeIn('fast');
             });
         });
