@@ -62,11 +62,9 @@ body {
 }
 
 .highlighter {
-    color: #83F52C;
-}
-
-.highlighter-i {
-    font-style: italic;
+    color: #6CCA24;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .grey-highlighter {
@@ -98,22 +96,22 @@ body {
 
 /* unvisited link */
 .hand:link {
-    color: #83F52C;
+    text-decoration: none;
 }
 
 /* visited link */
 .hand:visited {
-    color: #83F52C;
+    text-decoration: none;
 }
 
 /* mouse over link */
 .hand:hover {
-    color: #83F52C;
+    text-decoration: none;
 }
 
 /* selected link */
 .hand:active {
-    color: #83F52C;
+    text-decoration: none;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
